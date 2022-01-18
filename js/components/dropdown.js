@@ -11,7 +11,7 @@ export default class DropDown {
     //   exposeMethod("removeTag", removeTag.bind(this));
   }
   updateDropDown() {
-    //interroger le data manager pour avoir la liste à) jour
+    //interroger le data manager pour avoir la liste à jour
     let html = "";
     //   for (const key of Object.keys(list)) {
     //     list[key].forEach((elm) => {

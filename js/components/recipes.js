@@ -2,10 +2,10 @@ const DOM = document.createElement("main");
 
 function initMain() {
   document.body.appendChild(DOM);
-  updateMain();
+  updateTags();
 }
 
-function updateMain() {
+function updateTags() {
   //interroger le data manager pour avoir la liste à) jour
   let html = "";
 //   for (const key of Object.keys(list)) {
@@ -16,13 +16,14 @@ function updateMain() {
   DOM.innerHTML = html;
 }
 
-function cardHtml(name, type) {
+function addTag(name, type) {
   return `<button class="${type}" onclick="removeTag('${name}', '${type}')"><i class="fas fa-heart"></i>${name}</button>`;
 }
 
 function removeTag(name, type) {
   //informer le datamanager
-  updateMain();
+  updateTags(); //mettre à jour l'affichage des tags
+  //mettre à jour l'affichage de la liste des recettes
 }
 
-export { initMain, updateMain };
+export { initMain, updateTags };
