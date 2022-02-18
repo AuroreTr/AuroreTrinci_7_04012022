@@ -1,5 +1,5 @@
 import { initTags } from "./components/tags.js";
-import {initMain} from "./components/recipes.js";
+import {initMain} from "./components/recipesCard.js";
 import DropDown from "./components/dropdown.js";
 window.onload = ()=>{
     initTags();

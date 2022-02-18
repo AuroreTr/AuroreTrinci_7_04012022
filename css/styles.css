@@ -1,0 +1,98 @@
+/* RESET */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#logo-img {
+    width: 50px;
+    height: 46px;
+}
+
+#logo-title {
+    width: 268px;
+    height: 47px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, #search-bar, #search-icon {
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-bar {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+}
+
+button#search-icon {
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+section#dropdowns-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    height: 70px;
+    margin-right: 20px;
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-ingredients {
+    background-color: #3282F7;
+}
+
+#btn-appliance {
+    background-color: #68D9A4;
+}
+
+#btn-ustensils {
+    background-color: #ED6454;
+}

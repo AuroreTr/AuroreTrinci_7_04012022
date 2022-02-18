@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/7a1a2f8e97.js" crossorigin="anonymous"></script>
     <script src="js/main.js" type="module"></script>
 
 </head>
@@ -13,29 +18,55 @@
 <body>
 
     <header>
-        <img src="images/cooking_hat.svg" alt="logo Les Petits Plats">
-        <img src="images/les_petits_plats.svg" alt="logo Les Petits Plats">    
+        <img src="images/cooking_hat.svg" id="logo-img" alt="logo Les Petits Plats">
+        <img src="images/les_petits_plats.svg" id="logo-title" alt="logo Les Petits Plats">  
+        <form id="form"> 
+            <input type="search" id="search-bar" name="search-bar" placeholder="Rechercher un ingrédient, appareil, ustensile ou une recette">
+            <button id="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+          </form> 
+          
+          <section id="tags" class="tags">
+
+        </section>
+        <section id="dropdowns-container" class="dropdowns-container">
+            <div id="ingredient-container" class="ingredient-container">
+                <button id="btn-ingredients" class="btn-dropdown">
+                    Ingrédients
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul id="ingredients-list" class="list">
+
+                </ul>
+            </div>
+            <div id="appliance-container" class="appliance-container">
+               <button id="btn-appliance" class="btn-dropdown">
+                   Appareil
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+                <ul id="appliance-list" class="list">
+                    
+                </ul>
+            </div>
+            <div id="ustensil-container" class="ustensil-container">
+                <button id="btn-ustensils" class="btn-dropdown">
+                    Ustensiles
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul id="ustensils-list" class="list">
+
+                </ul>
+            </div>
+        </section>
+
     </header>
 
-    <main>
-        <div id="container" class="container">
-            <div class="row">
-                <input>
+    <!-- <main>
+        <section id="recipes-cards" class="recipes-cards">
 
-            </div>
-        </div>
-        <div id="container" class="container">
-            <div class="row">
-
-            </div>
-        </div>
-        <div id="container" class="container">
-            <div id="dropdown-container" class="dropdown-container">
-
-            </div>
-        </div>
-
-    </main>
+        </section>
+    </main> -->
 
 
 </body>

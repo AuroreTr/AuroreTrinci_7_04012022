@@ -1,4 +1,4 @@
-import recipes from "../recipesData.js";
+import recipes from "../recipes.js";
 
 const hashsName = {};
 const hashsIngredient = {};
