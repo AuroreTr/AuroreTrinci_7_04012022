@@ -6,6 +6,8 @@ const titles = new Machin(recipes, "name");
 const appliance = new Machin(recipes, "appliance");
 const ustensils = new Machin(recipes, "ustensils");
 
+console.log(getRecipes("blen"));
+
 /**
  * get the final recipes according to the data entries of the search bar and the selected tags
  *
@@ -18,6 +20,9 @@ function getRecipes(input) {
   const validRecipesIdByTitles = titles.hashTable[input];
   const validRecipesIdByAppliance = appliance.hashTable[input];
   const validRecipesIdByUstensils = ustensils.hashTable[input];
+  console.log(validRecipesIdByAppliance);
+  // TODO : gérer les cas où l'un des tableau serait undefined car vide
+
 
   let validRecipesId = commonEntries(validRecipesIdByIngrendients, validRecipesIdByTitles);
   validRecipesId = commonEntries(validRecipesId, validRecipesIdByAppliance);
